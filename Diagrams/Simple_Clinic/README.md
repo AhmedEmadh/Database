@@ -42,25 +42,34 @@
           different date or time.
 
 4. Medical Records:
-   • The database should store medical records for patients.
-   • For each attended appointment there should be a medical
-   record.
-   • Each medical record should have a unique identifier, a
-   patient, a doctor, a description of the visit, diagnosis,
-   prescribed medication, and any additional notes.
+   
+   - The database should store medical records for patients.
+   
+   - For each attended appointment there should be a medical
+     record.
+   
+   - Each medical record should have a unique identifier, a
+     patient, a doctor, a description of the visit, diagnosis,
+     prescribed medication, and any additional notes.
 
 5. Prescription:
-   • The database should store information about prescribed
-   medications.
-   • For each medical record there should be at most one
-   prescription.
-   • Each prescription should have a unique identifier, a
-   medical record, medication name, dosage, frequency, start
-   date, end date, and any special instructions.
+   
+   - The database should store information about prescribed
+     medications.
+   
+   - For each medical record there should be at most one
+     prescription.
+   
+   - Each prescription should have a unique identifier, a
+     medical record, medication name, dosage, frequency, start
+     date, end date, and any special instructions.
 
 6. Payments:
-   • The database should store information about payments.
-   • Payment is per appointment.
-   • Each payment should have a unique identifier, a patient, a
-   payment date, payment method, amount paid, and any additional
-   notes.
+   
+   - The database should store information about payments.
+   
+   - Payment is per appointment.
+   
+   - Each payment should have a unique identifier, a patient, a
+     payment date, payment method, amount paid, and any additional
+     notes.
