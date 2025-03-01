@@ -1,0 +1,13 @@
+ 
+-- Query (49)
+-- Get the Lowest Manufacturers manufactured the lowest number of models , remember that they could be more than one manufacturer have the same lowest number of models
+SELECT MAKES.Make, COUNT(*) AS NumberOfModels FROM MAKES
+INNER JOIN MakeModels ON MAKES.MakeID = MakeModels.MakeID
+GROUP BY MAKES.MAKE
+HAVING COUNT(*) = 
+(
+	SELECT DISTINCT TOP 1 COUNT(*) AS MaxNumberOfModels FROM MAKEMODELS
+	INNER JOIN MAKES ON MAKES.MakeID = MakeModels.MakeID
+	GROUP BY MAKES.Make
+	ORDER BY COUNT(*) ASC
+);
